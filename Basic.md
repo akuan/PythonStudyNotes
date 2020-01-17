@@ -75,6 +75,20 @@ f-string:'Hello %s' % name
 创建集合 ：{ } 或者 set() 函数  
 字典用 { } 标识，它是一个无序的 键(key) : 值(value) 的集合。
 
+集合操作函数
+
+add() 添加单个元素
+
+update() 以序列添加元素。
+
+discard():删除指定的元素，如果元素不存在则不进行任何操作  
+
+ remove() 删除元素，如果元素不存在则报错。
+
+pop() 移除排序后的第一个元素  
+
+支持集合的操作  + - | & ^
+
 ## 运算符
 
 //	取整除 - 向下取接近除数的整数  
@@ -114,16 +128,24 @@ swapcase():   大小写互换
 translate(table,deletechars=""):根据str给出的表转换string的字符  
 partition(sep)  --> (head,sep,tail) 返回头、分割符、尾三部分的三元组  
 b[::-1] 可实现列表翻转     
-  
+
 可变序列：列表(list),字典(dict)  
 不可变序列:元组(tuple),字符串(str)  
 字典的键必须不可变，所以可以用数字，字符串或元组充当，而用列表就不行    
 字典键值互换： 
 ```python
  reverse = {v: k for k, v in dic.items()}  
-``` 
+```
 字典通过value取到key 
 ``` python 
 list(dic.keys())[list(dic.values()).index(1)] 
-```   
-Mark https://www.runoob.com/python3/python3-set.html
+```
+
+
+
+
+循环语句
+
+while中的break，当没有执行break时被执行，for中的else 当有break时被执行？？
+
+Mark https://www.runoob.com/python3/python3-loop.html
